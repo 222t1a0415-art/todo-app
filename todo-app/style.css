@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 460px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section, .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+input, select, button {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+.filters {
+    margin: 10px 0;
+}
+
+.filters button {
+    margin-right: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f4f4f4;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    cursor: grab;
+}
+
+li.dragging {
+    opacity: 0.5;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.high { border-left: 5px solid red; }
+.medium { border-left: 5px solid orange; }
+.low { border-left: 5px solid green; }
+
+.progress-bar {
+    background: #ddd;
+    height: 8px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background: green;
+    border-radius: 5px;
+}
+
+#darkToggle {
+    margin-top: 10px;
+}
+
+/* DARK MODE */
+.dark {
+    background: #222;
+    color: white;
+}
+
+.dark .container {
+    background: #333;
+}
+
+.dark li {
+    background: #444;
+}
